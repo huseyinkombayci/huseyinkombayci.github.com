@@ -10,7 +10,7 @@ Personal website of Huseyin Kombayci
 ## Setup
 
 1. Run `bundle install`
-2. Run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
+2. Run `bundle exec jekyll serve --config _config.yml`
 3. Open it in your browser: `http://localhost:4000`
 
 
