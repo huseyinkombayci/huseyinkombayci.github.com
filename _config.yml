@@ -1,0 +1,21 @@
+name: Huseyin Kombayci
+title: Software Engineer
+description: I build apps, CLIs and APIs. Mostly Java, Spring Boot, JavaScript and React.
+description2: My current focus is on macOS and iOS app development with Swift.
+baseurl: ''
+url: https://huseyinkombayci.com
+social-link: huseyinkombayci
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme.md
+  - license
+  - CNAME
+  - screenshot.jpg
+plugins:
+  - jekyll-sitemap
+
+strict_front_matter: true
+
+# google-analytics-id: NA
