@@ -1,42 +1,45 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#3273DC">
-		<meta name="author" content="{{site.name}}">
-		{% capture description %}{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-		<meta name="description" content="{{ description }}">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-		<meta property="og:url" content="{{ page.url | absolute_url }}">
-		<meta property="og:description" content="{{ description }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#3273DC">
+	<meta name="author" content="{{site.name}}">
+	{% capture description %}{% if page.description %}{{ page.description | strip_html }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+	<meta name="description" content="{{ description }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:description" content="{{ description }}">
 	
-		<meta property="og:image" content="https://huseyinkombayci.com/huseyin-kombayci.jpg">
+	<meta property="og:image" content="https://huseyinkombayci.com/huseyin-kombayci.jpg">
 	
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@{{site.social-link}}">
-		<meta name="twitter:creator" content="@{{site.social-link}}">
-		<meta name="x-build-time" content="{{ site.time | date_to_rfc822 }}">
-		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
-		<link rel="alternate" type="application/rss+xml" title="{{site.name}}'s blog" href="https://blog.{{site.social-link}}.com/feed">
-		<link rel="preload" href="{{ '/font-awesome.woff' | relative_url }}" as="font" crossorigin>
-		<link rel="icon" href="{{ '/favicon.png' | relative_url }}" sizes="32x32">
-		<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
-		{% if page.url == '/' %}
-			<script type="module" src="{{ '/index.js' | relative_url }}"></script>
-		{% endif %}
-		<!-- Google Analytics -->
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google-analytics-id}}"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', '{{site.google-analytics-id}}');
-		</script> -->
-		<!-- / Google Analytics -->
-	</head>
-	<body>
-		{{ content }}
-	</body>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{site.social-link}}">
+	<meta name="twitter:creator" content="@{{site.social-link}}">
+	<meta name="x-build-time" content="{{ site.time | date_to_rfc822 }}">
+	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+	<link rel="alternate" type="application/rss+xml" title="{{site.name}}'s blog" href="https://blog.{{site.social-link}}.com/feed">
+	<link rel="preload" href="{{ '/font-awesome.woff' | relative_url }}" as="font" crossorigin>
+	<link rel="icon" href="{{ '/favicon.png' | relative_url }}" sizes="32x32">
+	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	{% if page.url == '/' %}
+	<script type="module" src="{{ '/index.js' | relative_url }}"></script>
+	{% endif %}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131430121-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131430121-1');
+	</script>
+
+</head>
+<body>
+	{{ content }}
+</body>
 </html>

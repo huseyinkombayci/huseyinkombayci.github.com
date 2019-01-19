@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:400,400italic,700,700italic");
 /*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround { from { transform: rotate(0deg); }
   to { transform: rotate(359deg); } }
@@ -51,7 +52,7 @@ html { background-color: white; font-size: 16px; -moz-osx-font-smoothing: graysc
 
 article, aside, figure, footer, header, hgroup, section { display: block; }
 
-body, button, input, select, textarea { font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+body, button, input, select, textarea { font-family: "Varela Round"; }
 
 code, pre { -moz-osx-font-smoothing: auto; -webkit-font-smoothing: auto; font-family: monospace; }
 
@@ -1104,7 +1105,7 @@ a.tag:hover { text-decoration: underline; }
 .title sup, .subtitle sup { font-size: 0.75em; }
 .title .tag, .subtitle .tag { vertical-align: middle; }
 
-.title { color: #363636; font-size: 2rem; font-weight: 600; line-height: 1.125; }
+.title { color: #10287E; font-size: 2rem; font-weight: 600; line-height: 1.125; }
 .title strong { color: inherit; font-weight: inherit; }
 .title + .highlight { margin-top: -0.75rem; }
 .title:not(.is-spaced) + .subtitle { margin-top: -1.25rem; }
@@ -2160,7 +2161,7 @@ a.panel-block:hover, label.panel-block:hover { background-color: whitesmoke; }
 
 .footer { background-color: #fafafa; padding: 3rem 1.5rem 6rem; }
 
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+.title, .subtitle { color: #10287E; }
 
 .image-crop { width: 160px; height: 160px; border-radius: 100%; margin: 0 auto; }
 
@@ -2178,11 +2179,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helve
 
 #latest-blog-post.visible { opacity: 1; }
 
+.emoji-name { font-size: 22px; margin-bottom: 6px; }
+
+.emoji-title { font-size: 12px; margin-bottom: 5px; }
+
+/* https://icomoon.io/ */
 @font-face { font-family: 'font-awesome'; src: url("font-awesome.woff") format("woff"); font-weight: normal; font-style: normal; }
-[class^='fa-'], [class*='fa-'] { font-family: 'font-awesome' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+[class^='fa-'], [class*='fa-'] { font-family: 'font-awesome' !important; color: #10287E; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .fa-medium:before { content: '\f23a'; }
 
 .fa-github:before { content: '\f09b'; }
+
+.fa-contact:before { content: '\f0e0'; }
 
 .fa-linkedin:before { content: '\f0e1'; }
